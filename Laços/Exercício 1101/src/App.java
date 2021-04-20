@@ -31,3 +31,4 @@ public class App {
 			y = scan.nextInt();
     }
 }
+}

@@ -4,22 +4,19 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         Scanner ler = new Scanner(System.in);
-		int alcool = 0;
-		int gasolina = 0;
-		int diesel = 0;
-		int tipo = 0;
+		int alcool = 0, gasolina = 0, diesel = 0, tipocombustivel = 0;
 
-		while (tipo != 4) 
+		while (tipocombustivel != 4) 
         {
             System.out.println ("Digite o código:");
-			tipo = ler.nextInt();
+			tipocombustivel = ler.nextInt();
 
-			while (tipo < 1 || tipo > 4) 
+			while (tipocombustivel < 1 || tipocombustivel > 4) 
             {
-				tipo = ler.nextInt();
+				tipocombustivel = ler.nextInt();
 			}
 			
-            switch (tipo) 
+            switch (tipocombustivel) 
             {
                 
 				case 1: alcool++; 

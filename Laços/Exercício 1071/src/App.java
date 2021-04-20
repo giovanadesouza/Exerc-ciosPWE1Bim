@@ -1,7 +1,8 @@
 import java.util.Scanner; 
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception 
+	{
         Scanner leitura = new Scanner(System.in);
     	int soma = 0;
 
@@ -13,7 +14,8 @@ public class App {
 
 		if (Valor1 < Valor2) 
         {
-			for (int i = Valor1 + 1; i < Valor2; i++) {
+			for (int i = Valor1 + 1; i < Valor2; i++) 
+			{
 				if (i % 2 != 0) 
                 {
 					soma += i;
