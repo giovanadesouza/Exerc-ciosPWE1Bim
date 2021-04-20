@@ -3,15 +3,18 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception 
     {
-        double[] n = new double[100];
-		Scanner ler = new Scanner(System.in);
-		
-		n[0] = ler.nextDouble();
-		
-		for(int i = 1 ; i < n.length ; i++) 
+        Scanner leitor = new Scanner(System.in);
+        double X = leitor.nextDouble();
+        double[] N = new double[100];
+        N[0] = X;
+        
+        for (int i = 1; i < N.length; i++) 
         {
-			n[i] = n[i - 1] / 2;
-			System.out.println("N[" + i + "] = " + n[i]);
+        	N[i] = N[i - 1] / 2.0000;
+        }
+        for (int i = 0; i < N.length; i++) 
+        {
+        	System.out.println(String.format("N[" + i + "] = %.4f", N[i]));
         }
     }
 }
